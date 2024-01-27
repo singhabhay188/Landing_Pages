@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fullslider{
+    overflow: hidden;
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+    width: 100%;
+    background-color: black;
+}
+.extraslider{
+    display: flex;
+    width: 100vw;
+    padding: 10px 0;
+    position: relative;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: max-content;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+.elem .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-image: url('https://thumbs.dreamstime.com/b/one-pineapple-solid-color-background-pineapple-solid-color-background-153311908.jpg');
+    background-size: cover;
+}
+.elem h1{
+    color: white;
+}
+.elem h1 sup{
+    font-size: small;
+}
+
+
+
+.orangefloater{
+    width: 100vw;
+    height: 50%;
+    position: absolute;
+    background-color: orangered;
+    bottom: 0;
+}

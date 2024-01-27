@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+    :root{
+        --darkfont1: 'Roboto', sans-serif;
+        --darkfont2: 'Kanit', sans-serif;
+    }
+
+main{
+    background-color: hsl(346.67deg 17.65% 70%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav img{
+    height: 100px;
+}
+nav h5{
+    text-transform: uppercase;
+    font-family: var(--darkfont1);
+    color: white;
+    font-weight: 700;
+    z-index: 99;
+    letter-spacing: 3px;
+}
+
+#part1{
+    height: 100%;
+    width: 20%;
+}
+#part2{
+    height: 100%;
+    width: 72%;
+    background-image: url('https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(346.67deg 17.65% 50%);
+    opacity: 0.5;
+}
+#part3{
+    height: 100%;
+    width: 8%;
+}
+
+#text-div{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0,-50%);
+}
+#text-div h1{
+    font-family: var(--darkfont2);
+    font-weight: 900;
+    font-size: 70px;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 60px;
+}
+
+#img2{
+    width: 250px;
+    height: 300px;
+    right: 5%;
+    top: 50%;
+    transform: translate(0,-50%);
+    position: absolute;
+    background-size: cover;
+    z-index: 99;
+    background-image: url('https://images.unsplash.com/photo-1523205565295-f8e91625443b?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#vertical-text{
+    text-transform: uppercase;
+    font-family: var(--darkfont2);
+    font-weight: 800;
+    position: absolute;
+    font-size: 60px;
+    letter-spacing: 12px;
+    color: transparent;
+    transform-origin: 0% 0%;
+    transform: rotate(90deg);
+    right: -46%;
+    
+    width: 100vh;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+}
