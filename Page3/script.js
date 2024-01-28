@@ -99,7 +99,44 @@ function horizontalLoop(items, config) {
     }
     return tl;
 }
-
-
 const elems =  [...document.querySelectorAll('.elem')];
 loop = horizontalLoop(elems, { paused: false,repeat:-1});
+
+
+let sliders = document.querySelectorAll('.fullslider').forEach(slider=>{
+  slider.addEventListener('mouseover',()=>{
+    console.log(slider.children[0]);
+    gsap.to(slider.children[0],{
+      height:"100",
+      ease:"none",
+      opacity:1,
+      duration:0.1
+    })
+  
+    gsap.to(slider.children[1],{
+      opacity:0,
+      ease:"none",
+      duration:0.1
+    })
+  })
+
+  slider.addEventListener('mouseleave',()=>{
+    gsap.to(slider.children[0],{
+      height:"0",
+      ease:"none",
+      opacity:0,
+      duration:0.1
+    })
+  
+    gsap.to(slider.children[1],{
+      opacity:1,
+      ease:"none",
+      duration:0.1
+    })
+  })
+})
+
+
+
+
+
