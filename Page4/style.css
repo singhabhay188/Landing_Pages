@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    perspective-origin: 100px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --slimfont:'Questrial', sans-serif;
+}
+
+
+nav{
+    justify-content: space-between;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 20px 5vw;
+}
+nav h4{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: var(--slimfont);
+    
+}
+nav i{
+    font-size: 1.5rem;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 900;
+    position: relative;   
+}
+.img{
+    position: absolute;
+    height: 80%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    left: 40%;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    
+    user-select: none;
+}
+.text{
+    text-transform: uppercase;
+    font-family: var(--slimfont);
+    text-align: center;
+    z-index: 11;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    mix-blend-mode: difference;
+    color: white;
+}
+
+
+
+
+.slider{
+    font-family: 'Work Sans', sans-serif;
+}
+.slider,.mainslider,.tempslider{
+    display: flex;
+}
+.front{
+    animation: slide 5s linear infinite;
+}
+.rev{
+    animation: slide 5s linear infinite reverse;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+}
+.slider h1{
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 110px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#cursor{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    top: 0;
+    left: 50;
+    position: absolute;
+    z-index: 1000;
+}
