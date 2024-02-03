@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flexrow">   
+    <div id="sidebar" class="flexcol spaceBetween">
+        <div class="section1">
+            <h3>Musicfy</h3>
+        </div>
+        <div class="section2">
+            <h5>Menu</h5>
+            <ul>
+                <li>
+                    <i class='bx bxs-bolt-circle' ></i>
+                    <a href="#" id="">explore</a>
+                </li>
+                <li>
+                    <i class='bx bxs-volume-full' ></i>
+                    <a href="#" id="">genres</a>
+                </li>
+                <li>
+                    <i class='bx bxs-album' ></i>
+                    <a href="#" id="">albums</a>
+                </li>
+                <li>
+                    <i class='bx bxs-microphone' ></i>
+                    <a href="#" id="">artists</a>
+                </li>
+                <li>
+                    <i class='bx bx-radio' ></i>
+                    <a href="#" id="">podcasts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="section2">
+            <h5>library</h5>
+            <ul>
+                <li>
+                    <i class='bx bx-repeat' ></i>
+                    <a href="#" id="">recent</a>
+                </li>
+                <li>
+                    <i class='bx bxs-photo-album' ></i>
+                    <a href="#" id="">albums</a>
+                </li>
+                <li>
+                    <i class='bx bxs-heart' ></i>
+                    <a href="#" id="">favourites</a>
+                </li>
+                <li>
+                    <i class='bx bx-folder' ></i>
+                    <a href="#" id="">local</a>
+                </li>
+            </ul>
+        </div>
+        <div class="section2">
+            <h5>playlist</h5>
+            <ul>
+                <li>
+                    <i class='bx bx-play-circle' ></i>
+                    <a href="#" id="">create new</a>
+                </li>
+                <li>
+                    <i class='bx bx-play-circle' ></i>
+                    <a href="#" id="">best of 2023</a>
+                </li>
+                <li>
+                    <i class='bx bx-play-circle' ></i>
+                    <a href="#" id="">best of 2022</a>
+                </li>
+                <li>
+                    <i class='bx bx-play-circle' ></i>
+                    <a href="#" id="">love songs</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card flexcol">
+            <div class="cardupper flexrow">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <h5 class="capitalize">billie eilish namaste kingdom Lorem, ipsum dolor.</h5>
+            </div>
+            <div class="cardlower flexrow">
+                <i class='bx bxl-apple' ></i>
+                <p class="capitalize">playing on device</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="flexcol">
+        <nav class="flexrow spaceBetween">
+            <ul id="navpart1" class="flexrow">
+                <li><a href="#">music</a></li>
+                <li><a href="#">live</a></li>
+                <li><a href="#">podcast</a></li>
+            </ul>
+            <div id="navpart2">
+                <i class='bx bx-search-alt-2' ></i>
+                <input type="text" id="" placeholder="Type here to search">
+            </div>
+            <div id="navpart3" class="flexrow">
+                <i class='bx bx-bell' ></i>
+                <i class='bx bxs-cog' ></i>
+                <div id="profile" class="flexrow">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKRfQIWeJt1RienW9yv_PcNeg-bSPU6ZygY7ieulgrvA&s" alt="">
+                    <h5>Abhay Singh</h5>
+                </div>
+            </div>
+            
+        </nav>
+
+        <div id="submain" class="flexrow">
+            <div id="submainpart1" class="flexcol">
+                <h5>Trending New Song</h5>
+                <div class="info flexrow spaceBetween">
+                    <div class="flexcol">
+                        <h1>Lost emotions</h1>
+                        <h4>Rion Clarke</h4>
+                        <h5>63 million plays</h5>
+                        <div class="buttons flexrow">
+                            <button>listen now</button>
+                            <i class='bx bxs-heart' ></i>
+                        </div>
+                    </div>
+                    <img src="https://cdn.magzter.com/1391693613/1682415731/articles/2JKcTVDV41682450562203/THE-TRUEBLUE-BOY-DARSHAN-RAVAL.jpg" alt="">
+                </div>
+                <div class="library flexrow">
+                    <div class="genres flexcol">
+                        <div class="top flexrow spaceBetween">
+                            <h4>Genres</h4>
+                            <h5 class="grey">View all</h5>
+                        </div>
+                        <div class="genresview">
+                            <div class="genre-entry flexrow" style="background-color: #466a89;">Electro Pop</div>
+                            <div class="genre-entry flexrow" style="background-color: #a69985;">Hip Hop</div>
+                            <div class="genre-entry flexrow" style="background-color: #a14c35;">Bhakti</div>
+                            <div class="genre-entry flexrow" style="background-color: #0c4045;">Romance</div>
+                            <div class="genre-entry flexrow" style="background-color: #a47a93;">Classical Pop</div>
+                            <div class="genre-entry flexrow" style="background-color: #5549a6;">Dance Bease</div>
+                        </div>
+                    </div>
+                    <div class="topsongs flexcol">
+                        <div class="top flexrow spaceBetween">
+                            <h4>Top Songs</h4>
+                            <h5 class="grey">See all</h5>
+                        </div>
+                        <div class="topsongslist flexcol">
+                            <div class="flexrow topsongsitem">
+                                <h6>01</h6>
+                                <img height="50px" src="https://www.udiscovermusic.com/wp-content/uploads/2017/11/Maroon-5-Songs-About-Jane-Album-Cover-Web-Optimised-820.jpg" alt="">
+                                <div class="info">
+                                    <h5>Sunrise</h5>
+                                    <h6 class="grey">Lila Rivera</h6>
+                                </div>
+                                <h4>03:45</h4>
+                                <i class='bx bx-play boundary'></i>
+                                <i class='bx bxs-message-square-add' ></i>
+                            </div>
+                            <div class="flexrow topsongsitem">
+                                <h6>01</h6>
+                                <img height="50px" src="https://www.udiscovermusic.com/wp-content/uploads/2017/11/Maroon-5-Songs-About-Jane-Album-Cover-Web-Optimised-820.jpg" alt="">
+                                <div class="info">
+                                    <h5>Sunrise</h5>
+                                    <h6 class="grey">Lila Rivera</h6>
+                                </div>
+                                <h4>03:45</h4>
+                                <i class='bx bx-play boundary'></i>
+                                <i class='bx bxs-message-square-add' ></i>
+                            </div>
+                            <div class="flexrow topsongsitem">
+                                <h6>01</h6>
+                                <img height="50px" src="https://www.udiscovermusic.com/wp-content/uploads/2017/11/Maroon-5-Songs-About-Jane-Album-Cover-Web-Optimised-820.jpg" alt="">
+                                <div class="info">
+                                    <h5>Sunrise</h5>
+                                    <h6 class="grey">Lila Rivera</h6>
+                                </div>
+                                <h4>03:45</h4>
+                                <i class='bx bx-play boundary'></i>
+                                <i class='bx bxs-message-square-add' ></i>
+                            </div>
+                            <div class="flexrow topsongsitem">
+                                <h6>01</h6>
+                                <img height="50px" src="https://www.udiscovermusic.com/wp-content/uploads/2017/11/Maroon-5-Songs-About-Jane-Album-Cover-Web-Optimised-820.jpg" alt="">
+                                <div class="info">
+                                    <h5>Sunrise</h5>
+                                    <h6 class="grey">Lila Rivera</h6>
+                                </div>
+                                <h4>03:45</h4>
+                                <i class='bx bx-play boundary'></i>
+                                <i class='bx bxs-message-square-add' ></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="submainpart2" class="flexcol spaceBetween">
+                <div class="top flexrow spaceBetween">
+                    <h4>Player</h4>
+                    <i class='bx bxs-hourglass-bottom'></i>
+                </div>
+                <img src="https://cdns-images.dzcdn.net/images/cover/bb2880548dd3bc71fb97def2eedec130/264x264.jpg" alt="">
+                <div class="center">
+                    <h2>Happier Then Ever</h2>
+                    <h3>Bilie Eilish</h3>
+                    <h5 class="grey">Best of 2024</h5>
+                </div>
+                <div class="musicrange flexrow">
+                    <h6>02:45</h6>
+                    <input type="range" min="0" max="100" id="musicstatus" value="60">
+                    <h6>01:36</h6>
+                </div>
+                <div class="songextra flexcol spaceBetween">
+                    <div class="songextracontrols flexrow">
+                        <i class='bx bx-repeat' ></i>
+                        <i class='bx bx-skip-previous' ></i>
+                        <i class='bx bx-play' id="playpause"></i>
+                        <i class='bx bx-skip-next' ></i>
+                        <i class='bx bx-shuffle' ></i>
+                    </div>
+                    <div class="lyricssection flexcol">
+                        <i class='bx bx-chevron-up' ></i>
+                        <h6>lyrics</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

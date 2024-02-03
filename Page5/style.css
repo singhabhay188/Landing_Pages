@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* Utilities Classes */
+.flexrow{
+    display: flex;
+    align-items: center;
+}
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.center{
+    text-align: center;
+}
+.grey{
+    color: #565658;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+
+/* SideBar */
+#sidebar{
+    height: 100vh;
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+#sidebar .section2 h5{
+    text-transform: uppercase;
+    color: grey;
+}
+#sidebar .section2 ul{
+    list-style-type: none;
+}
+#sidebar .section2 ul li{
+    margin-top: 5px;
+}
+#sidebar .section2 ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.card{
+    background-color: #333;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 15px;
+}
+.card .cardupper{
+    gap: 7px;
+    overflow: hidden;
+}
+.card .cardupper img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.card .cardupper h5{
+    white-space: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card .cardlower{
+    gap: 7px;
+}
+.card .cardlower p{
+    font-size: 0.8rem;
+}
+
+/* Main */
+main{
+    height: 100%;
+    width: 100%;
+    padding: 2vh 2vw;
+    background-color: #333;
+    gap: 2%;
+}
+/* Main nav */
+#navpart1{
+    list-style-type: none;
+    gap: 2vw;
+}
+#navpart1 li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+#navpart2{
+    position: relative;
+    width: 250px;
+}
+#navpart2 input{
+    width: 100%;
+    padding: 5px 15px;
+    padding-left: 30px;
+    background-color: #1e1d1e;
+    color: white;
+    outline: none;
+    border: none;
+}
+#navpart2 i{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%,-50%);
+}
+#navpart3{
+    gap: 1vw;
+}
+#navpart3 #profile{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1e1d1e;
+    color: white;
+    gap: 10px;
+    cursor: pointer;
+}
+#navpart3 #profile img{
+    height: 25px;
+}
+#navpart3 i{
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+/* submain part 1 */
+#submain{
+    height: 100%;
+}
+#submain>div{
+    height: 100%;
+}
+#submainpart1{
+    color: white;
+    gap: 1vh;
+    width: 70%;
+}
+#submainpart1 .info{
+
+    height: 200px;
+}
+#submainpart1 .info>img{
+    height: 200px;
+    border-radius: 15px;
+}
+#submainpart1 .info>div{
+    height: 100%;
+    justify-content: space-around;
+}
+#submainpart1 .info .buttons{
+    gap: 2vw;
+}
+#submainpart1 .info .buttons button{
+    background-color: #5773fa;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;    
+    align-items: center;
+    text-transform: capitalize;
+}
+#submainpart1 .info .buttons i{
+    font-size: 1.3rem;
+    border: 2px solid white;
+    padding: 8px;
+    color: #5773fa;
+    border-radius: 50%;
+}
+
+#submainpart1 .library{
+    flex: 1;
+    gap: 2%;
+}
+#submainpart1 .library .genres{
+    background-color: #211f27;
+    height: 100%;
+    width: 50%;
+    padding: 2%;
+    gap: 5%;
+}
+#submainpart1 .library .genres .genresview{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+#submainpart1 .library .genres .genresview .genre-entry{
+    background-color: lightblue;
+    justify-content: center;
+    cursor: pointer;
+}
+#submainpart1 .library .topsongs{
+    background-color: #211f27;
+    height: 100%;
+    width: 50%;
+    padding: 2%;
+    gap: 5%;
+}
+#submainpart1 .library .topsongs .topsongslist{
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
+}
+#submainpart1 .library .topsongs .topsongslist .topsongsitem{
+    width: 100%;
+    justify-content: space-evenly;
+}
+#submainpart1 .library .topsongs .topsongslist .topsongsitem div{
+    height: max-content;
+}
+#submainpart1 .library .topsongs .topsongslist .topsongsitem img{
+    border-radius: 15px;
+}
+#submainpart1 .library .topsongs .topsongslist .topsongsitem .boundary{
+    border: 2px solid #5772ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/* submain part 2 */
+#submainpart2{
+    background-color: #1e1d1e;
+    color: white;
+    width: 30%;
+    margin: 2%;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#submainpart2 .top{
+    padding: 3%;
+    width: 100%;
+}
+#submainpart2>img{
+    height: 30%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#submainpart2 .musicrange{
+    gap: 3%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#submainpart2 .musicrange input[type='range']{
+    width: 70%;
+    -webkit-appearance: none;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,rgba(225,225,228,255) 60%,rgba(133,129,137,255) 60%);
+}
+#submainpart2 .musicrange input[type='range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: #000;
+}
+#submainpart2 .aboutsong{
+    padding: 2%;
+}
+#submainpart2 .songextra{
+    background-color: #5772ff;
+    width: 100%;
+    height: 20%;
+    padding: 3% 0;
+    align-items: center;
+}
+#submainpart2 .songextra .songextracontrols{
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: max-content;
+}
+#submainpart2 .songextra .songextracontrols #playpause{
+    padding: 10px;
+    background-color: white;
+    color: #5772ff;
+    border-radius: 20px;
+}
+#submainpart2 .songextra .songextracontrols i{
+    font-size: 2rem;
+}
+#submainpart2 .songextra .lyricssection{
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: max-content;
+}
+#submainpart2 .songextra .lyricssection:hover{
+    scale: 1.2;
+}
