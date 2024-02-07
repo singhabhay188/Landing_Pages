@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: coral;
+}
+nav{
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a,nav ul i{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+nav li,nav ul i{
+    padding: 15px 2vw;
+}
+nav li:hover,nav ul i:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+nav li #login{
+    color: #466362;
+}
+
+#topbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#topbar>i{
+    display: none;
+}
+#topbar li:first-child{
+    margin-right: auto;
+}
+
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.9);
+    height: 100vh;
+    width: 250px;
+    transform: translateX(250px);
+    transition: 0.1s all linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav #sidebar li{
+    width: 100%;
+}
+nav #sidebar i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+@media (max-width:600px) {
+    #topbar>li{
+        display: none;
+    }
+    #topbar li:first-child{
+        display: block;
+    }
+    #topbar>i{
+        display: block;
+    }
+}
