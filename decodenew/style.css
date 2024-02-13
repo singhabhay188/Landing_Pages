@@ -17,12 +17,17 @@ body {
 }
 
 body {
+    background-color: #1b3d96;
     overflow-x: hidden;
 }
 
 .flex {
     display: flex;
     align-items: center;
+}
+
+.center{
+    justify-content: center;
 }
 
 .page {
@@ -60,7 +65,6 @@ main {
 }
 /* Nav Bar */
 nav {
-    border: 1px solid red;
     padding: 2vh 0;
     width: 100%;
     justify-content: space-between;
@@ -226,26 +230,62 @@ nav #logo {
     position: relative;
     width: 100%;
     height: 100vh;
-    color: white;
     font-family: 'Open Sans', sans-serif;
 }
+#page2>div{
+    border: 1px solid red;
+    height: 100%;
+    color: white;
+    width: 49%;
+    flex-direction: column;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#page2 #page2subabout{
+    flex-direction: column;
+}
+
+  
+  #page2about > p {
+    font-size: 18px; /* Set font size */
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  /* Styling for the sub about section */
+  #page2subabout {
+    border: 1px solid #ccc; /* Add border */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  /* Styling for the sub about section paragraphs */
+  #page2subabout p {
+    margin-bottom: 15px; /* Add margin for spacing between paragraphs */
+  }
+  
+  /* Styling for the bold spans */
+  #page2subabout span.bold {
+    font-weight: bold; /* Make text bold */
+  }
+  
+
 
 .special {
     flex-direction: column;
     width: 100%;
     gap: 30px;
+    padding: 10vh;
 }
 
-.special h1 {
-    font-size: 3rem;
+.specialh5 {
+    color: white;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 
-.special h5 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.special h5::after {
+.specialh5::after {
     content: '';
     position: absolute;
     margin-top: 15px;
@@ -257,27 +297,18 @@ nav #logo {
     background-color: darkmagenta;
 }
 
-#page2 div:nth-child(2) {
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    position: absolute;
-}
-
-#page2 div img {
-    width: 45%;
-}
-
 /* Page 3 styling */
 #page3 {
     justify-content: space-around;
     flex-direction: column;
+    min-height: 100vh;
+    height: max-content;
+    padding: 2vh 0;
     background-color: #ffe3ed;
     background-color: #214fc6;
 }
 
 .ag-courses_box {
-    background-color: red;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -296,23 +327,15 @@ nav #logo {
     padding: 30px 20px;
     background-color: #121212;
     overflow: hidden;
+    text-decoration: none;
     position: relative;
 }
 
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_date {
-    text-decoration: none;
-    color: #FFF;
-}
-
 .ag-courses-item_link:hover .ag-courses-item_bg {
-    -webkit-transform: scale(10);
-    -ms-transform: scale(10);
     transform: scale(10);
 }
 
 .ag-courses-item_title {
-    min-height: 87px;
     margin: 0 0 25px;
     overflow: hidden;
     font-weight: bold;
@@ -320,19 +343,6 @@ nav #logo {
     color: #FFF;
     z-index: 2;
     position: relative;
-}
-
-.ag-courses-item_date-box {
-    font-size: 18px;
-    color: #FFF;
-    z-index: 2;
-    position: relative;
-}
-
-.ag-courses-item_date {
-    font-weight: bold;
-    color: #f9b234;
-    transition: color .5s ease
 }
 
 .ag-courses-item_bg {
@@ -391,6 +401,53 @@ nav #logo {
     }
 }
 
+
+
+footer{
+    background-color:  #000;
+    border: 1px solid green;
+    color: #214fc6;
+    color: white;
+    border-top-left-radius: 50px;
+    overflow: hidden;
+    padding: 5vh 3vw;
+}
+footer .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1vw;
+}
+footer .col{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .col:nth-child(1){
+    background-color: #000;
+    color: white;
+}
+footer .col a{
+    text-decoration: none;
+    color: #214fc6;
+    color: white;
+}
+footer .col img{
+    height: 100px;
+}
+footer #emailPhone{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+footer i{
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+
+
+
 /* Media Queries */
 @media (max-width:650px) {}
 
@@ -402,6 +459,11 @@ nav #logo {
 
     .ag-courses-item_title {
         font-size: 24px;
+    }
+
+    footer .row{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 3vh;
     }
 }
 
@@ -447,17 +509,23 @@ nav #logo {
     }
 
     .ag-courses-item_title {
-        min-height: 72px;
         line-height: 1;
-
         font-size: 24px;
     }
 
     .ag-courses-item_link {
         padding: 22px 40px;
     }
+}
 
-    .ag-courses-item_date-box {
-        font-size: 16px;
+
+@media only screen and (max-width: 500px){
+    footer .row{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 3vh;
+    }
+    
+    footer .row .col:nth-child(1) p{
+        max-width: 300px;
     }
 }
