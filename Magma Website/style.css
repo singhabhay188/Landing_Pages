@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/*     font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.selectionInv::selection{
+    color: white;
+    background-color: black;
+}
+:root{
+    --primary-color:#0b48ed;
+}
+
+#main{
+    width: 100%;
+    overflow: hidden;
+    height: 300vh;
+    background-color: darkcyan;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+/* Page 1 */
+#page1{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page1>nav{
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+    padding: 3vw;
+}
+nav img{
+    height: 50px;
+}
+#nav-right>button{
+    background-color: transparent;
+    border: 0.1px solid white;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-weight: 700;
+    cursor: none;
+}
+#nav-right button:nth-child(1){
+    margin-right: 20px;
+}
+#bottomPage1{
+    position: absolute;
+    width: min(90vw,600px);
+    color: white;
+    bottom: 12vh;
+    left: 8vw;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+}
+#bottomPage1 #div1 h1{
+    font-size: 5rem;
+    font-weight: 400;
+}
+#bottomPage1 #div2{
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#bottomPage1 #div2 p{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+#bottomPage1 #div2 button{
+    padding: 10px 20px;
+    background-color: white;
+    color: #0b48ed;
+    border: none;
+    border-radius: 50px;
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #0a3cce;
+    position: relative;
+    color: white;
+}
+#page2>div{
+    width: 90vw;
+    height: 100%;
+    top: 50%;
+    margin: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    overflow: hidden;
+}
+#page2>div>h4{
+    font-weight: 500;
+}
+#page2>div>h1{
+    font-weight: 300;
+    letter-spacing: -2px;
+    font-size: 3.5rem;
+}
+
+
+
+@media (max-width:600px) {
+    #bottomPage1{
+        width: 50%;
+        bottom: 50%;
+        transform: translate(0,50%);
+        white-space: wrap;
+    }
+    #bottomPage1 #div1 h1{
+        font-size: 3rem;
+    }
+    #page2>div>h1{
+        font-size: 2.5rem;
+    }
+}
