@@ -1,8 +1,4 @@
-.products::-webkit-scrollbar{
-    display: none;
-}
-
-.categories::-webkit-scrollbar{
+#productContainer::-webkit-scrollbar{
     display: none;
 }
 
@@ -12,4 +8,14 @@
 
 .shader{
     background: linear-gradient(to right bottom, #69628a, #040309);
+}
+
+.product{
+    max-width: 14rem;
+}
+
+.image{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
