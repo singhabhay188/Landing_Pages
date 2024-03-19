@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player | 🎧</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex p-2">
+    <nav class="flex flex-col w-max justify-around h-full p-5">
+        <div>
+            <i class="ri-spotify-fill"></i>
+        </div>
+        <div id="navmiddle" class="flex flex-col">
+            <input type="radio" name="menu" id="home">
+            <label for="home"><i class="ri-home-4-fill illuminated"></i></label>
+
+            <input type="radio" name="menu" id="folder">
+            <label for="folder"><i class="ri-folder-fill"></i></label>
+
+            <input type="radio" name="menu" id="music">
+            <label for="music"><i class="ri-music-fill"></i></label>
+            
+            <input type="radio" name="menu" id="profile">
+            <label for="profile"><i class="ri-user-fill"></i></label>
+        </div>
+        <div>
+            <i class="ri-settings-5-fill"></i>
+        </div>
+    </nav>
+
+    <div class="rest h-full rounded-3xl flex overflow-hidden gap-5">
+        <div class="player rounded-3xl bg-red-300 h-full w-2/5">
+            
+        </div>
+        <div class="about flex flex-col gap-2 rounded-3xl h-full w-3/5 p-5">
+            <h2 class="text-3xl">Home</h2>
+            <div class="search-container relative">
+                <input class="w-full p-3 rounded-3xl outline-none focus:ring focus:border-blue-300 " type="text" name="" id="" placeholder="Search for Artist, Songs, Album ...">
+                <i class="ri-search-line absolute right-5 text-xl top-1/2 -translate-y-1/2"></i>
+            </div>
+            <h2 class="text-xl">Trending Right Now</h2>
+            <div class="music-section">
+                <div class="music">
+                    <p class="text-gray">01</p>
+                    <img src="https://placehold.co/50" alt="">
+                    <div class="info">
+                        <p>Kaash Aisa Hota</p>
+                        <p>Darshan Raval</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

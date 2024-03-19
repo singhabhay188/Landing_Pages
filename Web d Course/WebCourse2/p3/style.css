@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #2f2d4c;
+}
+nav i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+#navmiddle input{
+    display: none;
+}
+.illuminated {
+    position: relative;
+    display: inline-block;
+    color: #fdfcff;
+    text-shadow: 0 0 20px #fdfcff, 0 0 20px #fdfcff;
+}
+
+
+.rest{
+    flex: 1;
+    border: 20px solid #38385b;
+    background-color: #38385b;
+}
+
+.rest .about{
+    background-color: #ddd;
+}
