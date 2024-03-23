@@ -1,0 +1,49 @@
+:root{
+    --primary1-color: #333;
+    --primary1-text: white;
+    --primary2-color: #f5f5f5;
+    --primary2-text: black;
+    --primary3-color: #ef9d71;
+    --primary3-text: rgb(94, 41, 35);
+    --primary4-color: #AEDEE0;
+    --primary4-text: rgb(26, 43, 43);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #ef9d71;
+}
+html,body{
+    width: 100%;
+}
+
+body[theme="black"]{
+    background-color: var(--primary1-color);
+}
+body[theme="black"] .section{
+    color: var(--primary1-text);
+}
+
+body[theme="white"]{
+    background-color: var(--primary2-color);
+}
+body[theme="white"] .section{
+    color: var(--primary2-text);
+}
+
+body[theme="salmon"]{
+    background-color: var(--primary3-color);
+}
+body[theme="salmon"] .section{
+    color: var(--primary3-text);
+}
+
+body[theme="cyan"]{
+    background-color: var(--primary4-color);
+}
+body[theme="cyan"] .section{
+    color: var(--primary4-text);
+}
