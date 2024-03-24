@@ -1,7 +1,7 @@
 :root{
     --primary1-color: #333;
     --primary1-text: white;
-    --primary2-color: #f5f5f5;
+    --primary2-color: white;
     --primary2-text: black;
     --primary3-color: #ef9d71;
     --primary3-text: rgb(94, 41, 35);
@@ -46,4 +46,37 @@ body[theme="cyan"]{
 }
 body[theme="cyan"] .section{
     color: var(--primary4-text);
+}
+
+.team{
+    border-bottom: 2px solid black;
+    transition: all 0.5s linear;
+}
+.team .text{
+    grid-template-columns: 10% 45% 45%;
+}
+.team:last-child{
+    border-bottom: none;
+}
+.bluecoveronhover {
+    transition: height 0.3s ease;
+}
+.team:hover .bluecoveronhover {
+    height: 100%;
+}
+.text {
+    transition: color 0.3s ease;
+}
+.team:hover .text {
+    color: white;
+}
+.team .img {
+    width: 0;
+    height: 0;
+    transition: height 0.3s ease;
+}
+.team:hover .img {
+    width: 15rem;
+    height: 15rem;
+    display: block;
 }
