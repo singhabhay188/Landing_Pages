@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body theme="white">
+<body theme="black" class="overflow-x-hidden">
     <div class="main w-full">
         <div class="page1 section w-full h-screen relative">
           <div class="btmtext absolute bottom-[2%] left-[2%] z-[3]">
@@ -15,7 +15,7 @@
             <p>Software.Apps.Tools.</p>
             <p>For real people.Real lives.</p>
           </div>
-            <div class="hidden videodiv w-full h-full absolute top-0 left-0 overflow-hidden z-[2]">
+            <div style="--clip: 100%" class="videodiv w-full h-full absolute top-0 left-0 overflow-hidden z-[3]">
               <video class="w-full" autoplay muted loop src="https://xgjzloifyvgpbmyonaya.supabase.co/storage/v1/object/public/files/bBj1XfrSyi/1ENIoa5sjq"></video>
             </div>
             <div class="marquee w-full h-full relative overflow-hidden">
@@ -239,7 +239,7 @@
           </div>
 
         </div>
-        <div class="page6 w-full h-screen section p-20 flex">
+        <div class="page6 w-full section p-20 flex">
           <div class="left w-2/5 flex flex-col justify-between">
             <p class="text-xl w-1/2">Stay up-to-date on the latest healthcare innovations and thought leadership.</p>
             <div>
@@ -247,23 +247,24 @@
               <button class="border-2 border-[--primary4-text] py-5 px-10 uppercase font-semibold bg-[#f5f19c]">view all articles <i class="ri-arrow-right-up-line"></i></button>
             </div>
           </div>
-          <div class="right w-3/5 flex justify-around rotate-[-15deg]">
-            <div class="cylinder w-[350px] h-full rounded-full border-[1px] border-black p-10 flex flex-col justify-between items-center">
+          <div class="right w-3/5 flex justify-around rotate-[-25deg]">
+            <div class="cylinder w-[350px] rounded-full border-[1px] border-black p-10 flex flex-col justify-between items-center gap-[80px]">
               <img class="w-[250px] h-[250px] rounded-full" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65e61826ab9558e05e681a7f_Untitled%20design.png" alt="">
               <p class="text-center leading-[30px] font-semibold text-2xl">Equity in Tech: An International Women's Day Conversation with Caroline Nieto, Significo's CPO </p>
               <p class="mb-5 text-center bg-[#e9bbff] p-2 rounded-full w-max mx-auto">Thought Leadership</p>
             </div>
-            <div class="cylinder w-[350px] min-h-full rounded-full border-[1px] border-black p-10 flex flex-col justify-between items-center">
+            <div class="cylinder w-[350px] rounded-full border-[1px] border-black p-10 flex flex-col justify-between items-center gap-[80px]">
               <p class="mb-5 text-center bg-[#e9bbff] p-2 rounded-full w-max mx-auto">Thought Leadership</p>
               <p class="text-center leading-[30px] font-semibold text-2xl">How to Use Digital Health Interventions to Align Employee & Organizational Goals</p>
-              <p class="text-center font-light text-sm">How to use personalized digital health interventions to empower emloyees while achieving your organizations' goals.</p>
+              <p class="text-center text-sm">How to use personalized digital health interventions to empower emloyees while achieving your organizations' goals.</p>
               <img class="w-[250px] h-[250px] rounded-full object-cover" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65affe89f470b736a1da1ba2_How%20to%20Use%20Digital%20Health%20Interventions.jpg" alt="">
             </div>
           </div>
         </div>
         
     </div>
-
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>

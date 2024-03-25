@@ -1,5 +1,5 @@
 :root{
-    --primary1-color: #333;
+    --primary1-color: #111;
     --primary1-text: white;
     --primary2-color: white;
     --primary2-text: black;
@@ -46,6 +46,11 @@ body[theme="cyan"]{
 }
 body[theme="cyan"] .section{
     color: var(--primary4-text);
+}
+
+/* 1st Page */
+.videodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
 }
 
 .team{
